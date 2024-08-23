@@ -31,7 +31,12 @@ $secondary-color: #ff9900;
   }
 }
 .skills-title {
-  background: radial-gradient(circle, rgb(253, 165, 13), $secondary-color, rgb(28, 36, 51));
+  background: radial-gradient(
+    circle,
+    rgb(253, 165, 13),
+    $secondary-color,
+    rgb(28, 36, 51)
+  );
   background-clip: text;
   color: transparent;
   animation: gemini 3s linear infinite;
