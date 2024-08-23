@@ -1,0 +1,249 @@
+$secondary-color: #ff9900;
+:host ::ng-deep {
+  .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+    color: #ff9900;
+  }
+  .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+    color: #ff9900;
+  }
+
+  .mat-mdc-tab.mdc-tab--active:hover .mdc-tab__text-label {
+    color: #ff9900;
+  }
+  .mat-mdc-tab .mdc-tab__text-label {
+    color: whitesmoke;
+  }
+  .mat-mdc-tab-group,
+  .mat-mdc-tab-nav-bar {
+    --mdc-tab-indicator-active-indicator-color: #ff9900;
+    --mat-tab-header-disabled-ripple-color: rgba(0, 0, 0, 0.38);
+    --mat-tab-header-pagination-icon-color: #000;
+    --mat-tab-header-inactive-label-text-color: rgba(0, 0, 0, 0.6);
+    --mat-tab-header-active-label-text-color: #ff9900;
+    --mat-tab-header-active-ripple-color: #ff9900;
+    --mat-tab-header-inactive-ripple-color: #ff9900;
+    --mat-tab-header-inactive-focus-label-text-color: #ff9900;
+    --mat-tab-header-inactive-hover-label-text-color: #ff9900;
+    --mat-tab-header-active-focus-label-text-color: #ff9900;
+    --mat-tab-header-active-hover-label-text-color: #ff9900;
+    --mat-tab-header-active-focus-indicator-color: #ff9900;
+    --mat-tab-header-active-hover-indicator-color: #ff9900;
+  }
+}
+.certTitle {
+  background: radial-gradient(circle, rgb(253, 165, 13), $secondary-color, rgb(28, 36, 51));
+  background-clip: text;
+  color: transparent;
+  animation: gemini 3s linear infinite;
+  background-size: 200% 200%;
+}
+@keyframes gemini {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+
+  .slide-track {
+    display: flex;
+    width: calc(1550px * 10);
+    animation: scroll 50s linear infinite;
+
+    .slide {
+      width: auto;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      animation: tilt-shaking 2s infinite;
+      animation-timing-function: linear;
+      position: relative; /* Ensure the image stays within the context */
+
+      img {
+        height: 300px;
+        transition: transform 0.5s ease;
+        z-index: 1; /* Default z-index to ensure it stacks properly */
+      }
+
+      img:hover {
+        transform: scale(1.5);
+        z-index: 10; /* Bring the image above other elements */
+      }
+    }
+  }
+
+  /* Allow overflow visibility on the parent so the scaled image is not cropped */
+  .slide-track {
+    overflow: visible;
+  }
+  .slide-track:hover {
+    animation-play-state: paused;
+  }
+}
+
+.slider2 {
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  .slide-track2 {
+    display: flex;
+    width: calc(150px * 10);
+    animation: scroll2 50s linear infinite;
+
+    .slide2 {
+      width: auto;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      animation: tilt-shaking 2s infinite;
+      animation-timing-function: linear;
+
+      .skills {
+        background-color: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        max-width: 300px;
+        min-width: 300px;
+
+        max-height: 500px;
+        height: max-content;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        padding: 30px;
+        border: 5px solid #ff9900;
+        border-radius: 1rem;
+
+        p {
+          color: white;
+          font-size: 1rem;
+        }
+        .skills-title {
+          color: #ff9900;
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+        img {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .slide-track2:hover {
+    animation-play-state: paused;
+  }
+}
+
+.slider3 {
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  .slide-track3 {
+    display: flex;
+    width: calc(950px * 10);
+    animation: scroll3 20s linear infinite;
+
+    .slide3 {
+      width: auto;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      animation: tilt-shaking 2s infinite;
+      animation-timing-function: linear;
+
+      .skills {
+        background-color: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        max-width: 300px;
+        min-width: 300px;
+
+        max-height: 500px;
+        height: max-content;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        padding: 30px;
+        border: 5px solid #ff9900;
+        border-radius: 1rem;
+
+        p {
+          color: white;
+          font-size: 1rem;
+        }
+        .skills-title {
+          color: #ff9900;
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+        img {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .slide-track3:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1950px * 5));
+  }
+}
+@keyframes scroll3 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-950px * 5));
+  }
+}
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1950px * 5));
+  }
+}
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

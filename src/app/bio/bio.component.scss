@@ -1,0 +1,58 @@
+$secondary-color: #ff9900;
+::ng-deep {
+  mat-icon {
+    color: rgb(249 115 22 / var(--tw-text-opacity)) !important;
+  }
+}
+.bioContainer {
+  .iconImages {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    a img {
+      height: 2rem;
+      width: 2rem;
+      border-radius: 100%;
+      padding: 5px;
+      background-color: #ff9900;
+      transition: 0.2s;
+    }
+    a:nth-child(1) {
+      margin-top: -50px;
+    }
+    a:nth-child(2) {
+      margin-top: -33px;
+    }
+    a:nth-child(3) {
+      margin-top: -27px;
+    }
+    a:nth-child(4) {
+      margin-top: -33px;
+    }
+    a:last-child {
+      margin-top: -50px;
+    }
+    a img:hover {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+  .biography {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .infoBio {
+      ul {
+        width: 50%;
+        color: white;
+        font-size: larger;
+        li span {
+          margin-left: 20px;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
