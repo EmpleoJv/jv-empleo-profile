@@ -31,7 +31,12 @@ $secondary-color: #ff9900;
   }
 }
 .certTitle {
-  background: radial-gradient(circle, rgb(253, 165, 13), $secondary-color, rgb(28, 36, 51));
+  background: radial-gradient(
+    circle,
+    rgb(253, 165, 13),
+    $secondary-color,
+    rgb(28, 36, 51)
+  );
   background-clip: text;
   color: transparent;
   animation: gemini 3s linear infinite;
@@ -82,7 +87,6 @@ $secondary-color: #ff9900;
       }
     }
   }
-
   /* Allow overflow visibility on the parent so the scaled image is not cropped */
   .slide-track {
     overflow: visible;
@@ -91,7 +95,6 @@ $secondary-color: #ff9900;
     animation-play-state: paused;
   }
 }
-
 .slider2 {
   position: relative;
   width: 100%;
